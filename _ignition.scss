@@ -10,14 +10,14 @@
 @import "internals/internal-mixins";
 
 // ...Then settings
-@import "settings/griddl-settings";
+@import "settings/grid-settings";
 
 // ...And finally components
 // Helpers
 @import "components/helpers/border-radius";
 @import "components/helpers/box-shadow";
 // Grid
-@import "components/griddl/containers";
-@import "components/griddl/components";
+@import "components/grid/containers";
+@import "components/grid/components";
 // Fonts
 @import "components/fonts/font-face";
