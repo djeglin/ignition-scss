@@ -1,0 +1,33 @@
+@function is-even($num) {
+    @if $num % 2 == 0 {
+        @return true;
+    }
+    @return false;
+}
+
+@function percent($target, $container) {
+  @return ($target / $container) * 100%;
+}
+
+@function get-col-percentage($amount) {
+    $cols: nth($amount, 1);
+    $total-cols: get-second-value($amount);
+    @return percent($cols, $total-cols);
+}
+
+@function get-second-value($vals: $vals) {
+    @if length($vals) == 3 {
+      $cols: nth($vals, 3);
+      @return $cols;
+    } @else {
+        @return $parent-cols;
+    }
+}
+
+@function box-numbers($list: $vals) {
+  $list-values: null;
+  @each $val in $list {
+    $list-values: join($list-values, $val);
+  }
+  @return $list-values;
+}
