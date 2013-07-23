@@ -1,0 +1,16 @@
+@mixin indent($amount: $cols of $parent-cols, $direction: $layout-direction) {
+   $horiz: if($direction == rtl, right, left);
+   $percent: get-col-percentage($amount);
+   #{$horiz}: $percent;
+}
+
+@mixin outdent($amount: $cols of $parent-cols, $direction: $layout-direction) {
+   $horiz: if($direction == rtl, right, left);
+   $percent: get-col-percentage($amount);
+   #{$horiz}: $percent * -1;
+}
+
+@mixin reset-position() {
+   left: auto !important;
+   right: auto !important;
+}

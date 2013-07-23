@@ -17,7 +17,14 @@
 @import "components/helpers/border-radius";
 @import "components/helpers/box-shadow";
 // Grid
-@import "components/grid/containers";
-@import "components/grid/components";
+@import "components/grid/container";
+@import "components/grid/clear";
+@import "components/grid/component";
+@import "components/grid/break";
+@import "components/grid/cols";
+@import "components/grid/indentation";
+@import "components/grid/padding";
 // Fonts
 @import "components/fonts/font-face";
+// Normalize
+@import "components/normalize/normalize";
