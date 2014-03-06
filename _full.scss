@@ -1,8 +1,14 @@
 /*
  IGNITION SCSS
- v0.1  (07/2013)
+ v0.9b  (03/2014)
  Written by David Eglin
  Licensed under GPL
+
+ This is the full Ignition implementation with all helpers and
+ modules enabled. 
+
+ I recommend combining Ignition with the Bourbon mixin library
+ for maximum speed enhancement and life enrichment
  */
 
 // Import internals first
@@ -11,19 +17,13 @@
 
 // ...Then settings
 @import "settings/grid-settings";
+@import "settings/media-query-settings";
 
 // ...And finally components
 // Helpers
-@import "components/helpers/border-radius";
-@import "components/helpers/box-shadow";
+@import "helpers";
 // Grid
-@import "components/grid/container";
-@import "components/grid/clear";
-@import "components/grid/component";
-@import "components/grid/break";
-@import "components/grid/cols";
-@import "components/grid/indentation";
-@import "components/grid/padding";
+@import "grid";
 // Fonts
 @import "components/fonts/font-face";
 // Normalize

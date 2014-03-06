@@ -1,0 +1,22 @@
+/*
+ IGNITION SCSS
+ v0.9b  (03/2014)
+ Written by David Eglin
+ Licensed under GPL
+
+ This is the grids only version of Ignition. Use this if you only
+ want the basic grid components. Probably need to include some 
+ settings here, maybe.
+
+ I recommend combining Ignition with the Bourbon mixin library
+ for maximum speed enhancement and life enrichment
+ */
+
+@import "components/grid/container";
+@import "components/grid/clear";
+@import "components/grid/component";
+@import "components/grid/break";
+@import "components/grid/cols";
+@import "components/grid/indentation";
+@import "components/grid/padding";
+@import "components/grid/margin";

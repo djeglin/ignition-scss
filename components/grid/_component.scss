@@ -1,10 +1,10 @@
-@mixin component($break: false, $direction: $layout-direction) {
+@mixin component($break: false, $direction: $layout-direction, $text-direction: $layout-direction, $padding: $component-padding) {
    $float: left;
    @if $direction == rtl {
       $float: right;
-      direction: rtl;
    }
    float: $float;
+   direction: $text-direction;
    position: relative;
    
    @if $break {
@@ -14,10 +14,12 @@
    box-sizing: border-box;
    // add a default width here. It gets overridden by cols()
    width: 100%;
+   // add default padding. This can be overridden
+   padding: $padding;
    
    @media screen and (max-width: 480px) {
-      width: 100% !important;
-      left: auto !important;
-      right: auto !important;
+      width: 100%;
+      left: auto;
+      right: auto;
    }
 }
