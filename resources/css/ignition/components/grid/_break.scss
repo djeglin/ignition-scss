@@ -1,9 +1,0 @@
-@mixin break($direction: $layout-direction) {
-   $clear: left;
-   @if $direction == rtl {
-	  $clear: right;
-   }
-   &+* {
-	  clear: $clear;
-   }
-}
