@@ -4,7 +4,7 @@
    overflow: hidden;
    position: relative;
    *zoom: 1;
-   max-width: $max-width; /* TODO: How does the em width affect nested containers when we allow for ems stacking? Could this cause problems? Would we be better served by not using ems for max-width here? */
+   max-width: $max-width; // TODO: How does the em width affect nested containers when we allow for ems stacking? Could this cause problems? Would we be better served by not using ems for max-width here?
    
    @if $align == left {
       $margin-left: 0;
