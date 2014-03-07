@@ -1,0 +1,19 @@
+@mixin font-face($name, $weight, $style, $files...) {
+   @font-face {
+      font-family: $name;
+      $src-list: null;
+      @each $file in $files {
+         $format: nth($file, 1);
+         $uri: nth($file, 2);
+         $font: if($format == "embedded-opentype", url(#{$uri}?#iefix) format(#{$format}), url(#{$uri}) format(#{$format}));
+         $src-list: join($src-list, $font);
+      }
+      src: $src-list;
+      @if $weight {
+         font-weight: $weight;
+      }
+      @if $style {
+         font-style: $style;
+      }
+   }
+}
