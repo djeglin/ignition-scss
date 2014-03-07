@@ -1,0 +1,11 @@
+// Defaults first - These shouldn't be touched by the user
+$default-break-mobile: 30em; // 480px
+$default-break-portrait: 48em; // 768px
+$default-break-landscape: 64em; // 1024px
+$default-break-desktop: 77em; // 1232px
+
+// Actual settings - These will be overridden by the user
+$break-mobile: $default-break-mobile;
+$break-portrait: $default-break-portrait;
+$break-landscape: $default-break-landscape;
+$break-desktop: $default-break-desktop;
