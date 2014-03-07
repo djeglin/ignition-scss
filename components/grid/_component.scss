@@ -17,6 +17,7 @@
    // add default padding. This can be overridden
    padding: $padding;
    
+   // Set some basic automatic mobile styles to force single-column
    @media screen and (max-width: 480px) {
       width: 100%;
       left: auto;

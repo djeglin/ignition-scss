@@ -1,0 +1,5 @@
+@function get-col-percentage($amount) {
+    $cols: nth($amount, 1);
+    $total-cols: get-second-value($amount);
+    @return percent($cols, $total-cols);
+}

@@ -1,0 +1,7 @@
+@function box-numbers($list: $vals) {
+  $list-values: null;
+  @each $val in $list {
+    $list-values: join($list-values, $val);
+  }
+  @return $list-values;
+}

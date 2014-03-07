@@ -1,0 +1,8 @@
+@function get-second-value($vals: $vals) {
+    @if length($vals) == 3 {
+      $cols: nth($vals, 3);
+      @return $cols;
+    } @else {
+        @return $parent-cols;
+    }
+}

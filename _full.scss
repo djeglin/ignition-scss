@@ -12,8 +12,11 @@
  */
 
 // Import internals first
-@import "internals/internal-functions";
-@import "internals/internal-mixins";
+@import "internals/is-even";
+@import "internals/get-second-value";
+@import "internals/box-numbers";
+@import "internals/percent";
+@import "internals/get-col-percentage";
 
 // ...Then settings
 @import "settings/grid-settings";
@@ -21,9 +24,9 @@
 
 // ...And finally components
 // Helpers
-@import "helpers";
+@import "imports/helpers";
 // Grid
-@import "grid";
+@import "imports/grid";
 // Fonts
 @import "components/fonts/font-face";
 // Normalize
