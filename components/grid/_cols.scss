@@ -6,7 +6,7 @@
 
    // Responsive styles for items which aren't full width
    @if $total-cols / $cols != 1 {
-
+		// TODO: Decide on responsive behaviour, or take out? 
    }
 }
 
