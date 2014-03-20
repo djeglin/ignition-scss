@@ -1,11 +1,4 @@
-// Defaults first - These shouldn't be touched by the user
-$default-layout-direction: ltr;
-$default-component-padding: 10px;
-$default-component-margin: 2%;
-$default-parent-cols: 12;
-
-// Actual settings - These will be overridden by the user
-$layout-direction: $default-layout-direction;
-$component-padding: $default-component-padding;
-$component-margin: $default-component-margin;
-$parent-cols: $default-parent-cols;
+$layout-direction: ltr;
+$component-padding: 10px;
+$component-margin: 2%;
+$parent-cols: 12;
