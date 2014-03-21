@@ -1,6 +1,4 @@
 @mixin container($max-width: 85.375em, $align: "center") {
-   $margin-left: auto;
-   $margin-right: auto;
    overflow: hidden;
    position: relative;
    *zoom: 1;
@@ -12,7 +10,8 @@
    @if $align == right {
       $margin-right: 0;
    }
-   
+   $margin-left: auto !default;
+   $margin-right: auto !default;
    margin-left: $margin-left;
    margin-right: $margin-right;
 }
