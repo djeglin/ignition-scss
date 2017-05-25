@@ -1,5 +1,5 @@
-#Ignition
-##An SCSS mixin library for rolling your own semantic grid as you go
+# Ignition
+## An SCSS mixin library for rolling your own semantic grid as you go
 
 Grid systems are great. No, really. They are. Its just that, well... They aren't. They're too rigid, they force you to do things a certain way, and they require ugly, non-semantic markup to work. On the other hand, though, the alternative is hand-coding all that CSS that makes a responsive site work, and that can take a lot of code and a lot of time. 
 
